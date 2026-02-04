@@ -30,7 +30,7 @@ return {
 
       -- MARKS (gerenciar lista)
       vim.keymap.set('n', '<leader>la', function()
-        harpoon:list():append()
+        harpoon:list():add()
       end, { desc = 'Harpoon: Add file' })
       vim.keymap.set('n', '<leader>lr', function()
         harpoon:list():remove()
