@@ -7,8 +7,10 @@
 vim.o.number = true
 vim.o.relativenumber = true
 
-vim.o.tabstop = 3
-vim.o.shiftwidth = 3
+vim.o.expandtab = true
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+vim.o.smartindent = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
 -- vim.o.relativenumber = true
@@ -24,7 +26,7 @@ vim.o.showmode = false
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
 vim.schedule(function()
-  vim.o.clipboard = 'unnamedplus'
+   vim.o.clipboard = 'unnamedplus'
 end)
 
 -- Enable break indent
